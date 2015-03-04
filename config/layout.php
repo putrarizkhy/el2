@@ -13,7 +13,7 @@ $scale = 150; // size of 1 tile of 1x1, in px
 $spacing = 10; // space between tiles, in px
 
 /* Tilegroup settings */
-$groupTitles = array(); // titles of the tileGroups
+$groupTitles = array(''); // titles of the tileGroups
 $groupSpacing = array(5); // width of each tileGroup (spacing between the groups in tiles)
 $groupDirection = "horizontal"; // put the groups in a vertical or horizontal order?
 $mouseScroll = false; //  set to "groups" to scroll between groups, set to "horizontal" to continuously scroll horizontal or set to false to disable scrolling (so it will scroll vertical)

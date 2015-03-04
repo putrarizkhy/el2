@@ -44,7 +44,7 @@ function showSidebar($name){
 			}
 		}
 		/* Load tiles */
-		foreach($sidebar[$name]["tiles"] as $args){
+		/*foreach($sidebar[$name]["tiles"] as $args){
 			$n_args = array();
 			foreach($tileTypes[$args['type']] as $key=>$std){
 				if(array_key_exists($key,$args)){
@@ -54,7 +54,8 @@ function showSidebar($name){
 				}
 			}
 			call_user_func_array("tile_".$args['type'],$n_args);
-		}
+			
+		}*/
 		triggerEvent("sidebarEnd");
 		?>
         </div>

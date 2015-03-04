@@ -15,7 +15,7 @@ showSidebar("some_info");
 ?>
 
 <script>
-$mainNav.set("tilegroup 2")
+/*$mainNav.set("tilegroup 2")*/
 </script>
 
 

@@ -130,7 +130,7 @@ require_once("inc/seo.php");
 	<!--[if gte IE 9]><!-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="js/html5.js"></script>
-	<!--[endif]-->
+	<![endif]-->
     <!--[if !IE]>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<![endif]-->
@@ -185,9 +185,8 @@ if($bgImage!=""){
 				 echo "style='display:block;'";
 			}?>>
             <?php if($groupDirection == "horizontal"){?>
-        		<!-- <img id='arrowLeft' class="navArrows" src='themes/<?php echo $theme?>/img/primary/arrowLeft.png' onClick="javascript:$group.goLeft();" alt="left arrow"/>
-            	<img id='arrowRight' class="navArrows" src='themes/<?php echo $theme?>/img/primary/arrowRight.png' onClick="javascript:$group.goRight();" alt="right arrow"/>
-       			-->
+        		<!--img id='arrowLeft' class="navArrows" src='themes/<?php echo $theme?>/img/primary/arrowLeft.png' onClick="javascript:$group.goLeft();" alt="left arrow"/>
+            	<img id='arrowRight' class="navArrows" src='themes/<?php echo $theme?>/img/primary/arrowRight.png' onClick="javascript:$group.goRight();" alt="right arrow"/-->
        		<?php 
 			}
 			include("inc/tilegen.php");
