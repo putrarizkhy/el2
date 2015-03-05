@@ -73,7 +73,7 @@ header{
 }
 #centerWrapper{
 	position:relative;
-	max-width: 900px;
+	max-width: 1064px;
 	margin:0 auto 15px auto;
 	padding: 0px 15px 0px 15px;
 }
@@ -172,4 +172,10 @@ footer:hover{
 .sidebar-top{
 	margin: 5px 0 5px 0;
 	width:100%;
+}
+.sidebarpage{
+	float: left;
+	width: 300px;
+	display: block;
+	height: 300px;
 }
