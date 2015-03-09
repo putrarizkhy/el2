@@ -63,7 +63,7 @@ $tile[] = array("type"=>"custom","group"=>0,"x"=>0,"y"=>0.99,'width'=>1.25,'heig
 <div style='font-size:57px;line-height:30px;'>Book</div>
 </div>");
 */
-$tile[] = array("type"=>"slide","group"=>0,"x"=>0,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#00BFFF","url"=>"sidebars.php",
+$tile[] = array("type"=>"slide","group"=>0,"x"=>0,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#00BFFF","url"=>"books.php",
 	"text"=>"<h3>Book</h3>","img"=>"img/metro_slide_300x150_2.png","imgSize"=>1,
 	"slidePercent"=>0.40,
 	"slideDir"=>"up", // can be up, down, left or right

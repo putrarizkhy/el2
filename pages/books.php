@@ -1,8 +1,8 @@
 <?php
 $subNav = array(
-	"Welcome ; welcome.php ; #509601;",
-	"Accordions ; accordions.php ; #509601;",
-	"Sidebars ; sidebars.php ; #509601;",
+	"Daftar Buku ; books.php ; #509601;",
+  "Buku Favorit ; books.php ; #509601;",
+	"Cari ; books.php ; #509601;",
 );
 
 
