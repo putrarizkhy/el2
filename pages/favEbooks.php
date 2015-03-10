@@ -1,8 +1,8 @@
 <?php
 $subNav = array(
-	"Daftar Buku ; books.php ; #509601;",
-  "Buku Favorit ; favbooks.php ; #509601;",
-	"Cari ; findbooks.php ; #509601;",
+	"Daftar Ebook ; Ebooks.php ; #509601;",
+  "Ebook Favorit ; favEbooks.php ; #509601;",
+  "Cari ; findEbooks.php ; #509601;",
 );
 
 
@@ -19,15 +19,15 @@ include_once("inc/essentials.php");
 
 
 <div class="sidebarpage">
-	<div id="a" class="book imageNavinside">&nbsp;</div>
+	<div id="a" class="Ebook imageNavinside">&nbsp;</div>
   
   <div>
     <ul id="side">
   <h3>
-    <a>Tambah Daftar Buku</a>
+    <a>Tambah Daftar Ebook</a>
   </h3>
   <h3>
-    <a>Cetak Daftar Buku</a>
+    <a>Cetak Daftar Ebook</a>
   </h3>
   </ul>
 </div>
@@ -60,7 +60,7 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
+          <td style="text-align:left;">Ebook baru</td>
           <td>Fiksi</td>
           <td>monitor publisher</td>
           <td>Prof.Mul</td>
@@ -90,7 +90,7 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
+          <td style="text-align:left;">Ebook baru</td>
           <td>Fiksi</td>
           <td>monitor publisher</td>
           <td>Prof.Mul</td>
@@ -118,7 +118,7 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
+          <td style="text-align:left;">Ebook baru</td>
           <td>Fiksi</td>
           <td>monitor publisher</td>
           <td>Prof.Mul</td>
@@ -146,7 +146,7 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
+          <td style="text-align:left;">Ebook baru</td>
           <td>Fiksi</td>
           <td>monitor publisher</td>
           <td>Prof.Mul</td>
@@ -175,7 +175,7 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
+          <td style="text-align:left;">Ebook baru</td>
           <td>Fiksi</td>
           <td>monitor publisher</td>
           <td>Prof.Mul</td>

@@ -1,8 +1,8 @@
 <?php
 $subNav = array(
-	"Daftar Buku ; books.php ; #509601;",
-  "Buku Favorit ; favbooks.php ; #509601;",
-	"Cari ; findbooks.php ; #509601;",
+	"Daftar Audio ; Audios.php ; #509601;",
+  "Audio Favorit ; favAudios.php ; #509601;",
+  "Cari ; findAudios.php ; #509601;",
 );
 
 
@@ -19,15 +19,15 @@ include_once("inc/essentials.php");
 
 
 <div class="sidebarpage">
-	<div id="a" class="book imageNavinside">&nbsp;</div>
+	<div id="a" class="Audio imageNavinside">&nbsp;</div>
   
   <div>
     <ul id="side">
   <h3>
-    <a>Tambah Daftar Buku</a>
+    <a>Tambah Daftar Audio</a>
   </h3>
   <h3>
-    <a>Cetak Daftar Buku</a>
+    <a>Cetak Daftar Audio</a>
   </h3>
   </ul>
 </div>
@@ -37,7 +37,7 @@ include_once("inc/essentials.php");
   <div class="assets index">
 
 
-    <h2>Pencarian Buku</h2>
+    <h2>Pencarian Audio</h2>
     <div class="content-box">
     <div class="content-box-content">
       <div class="tags">

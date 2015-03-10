@@ -1,8 +1,8 @@
 <?php
 $subNav = array(
-	"Daftar Buku ; books.php ; #509601;",
-  "Buku Favorit ; favbooks.php ; #509601;",
-	"Cari ; findbooks.php ; #509601;",
+	"Daftar Audio ; Audios.php ; #509601;",
+  "Audio Favorit ; favAudios.php ; #509601;",
+	"Cari ; findAudios.php ; #509601;",
 );
 
 
@@ -20,15 +20,15 @@ include_once("inc/essentials.php");
 
 <div class="sidebarpage">
 
-  <div id="a" class="book imageNavinside">&nbsp;</div>
+  <div id="a" class="Audio imageNavinside">&nbsp;</div>
 	
   <div>
     <ul id="side">
   <h3>
-    <a>Tambah Daftar Buku</a>
+    <a>Tambah Daftar Audio</a>
   </h3>
   <h3>
-    <a>Cetak Daftar Buku</a>
+    <a>Cetak Daftar Audio</a>
   </h3>
   </ul>
 </div>
@@ -40,15 +40,12 @@ include_once("inc/essentials.php");
     <table class="table hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
-          <th>ID</th>
-          <th class="largest-row"><a href="#">Judul</a></th>
+          <th>ID Pustaka</th>
+          <th><a href="#">Judul</a></th>
           <th><a href="#">Kategori</a></th>
-          <th><a href="#">Penerbit</a></th>
+          <th><a href="#">Penyanyi</a></th>
           <th><a href="#">Pengarang</a></th>
-          <th><a href="#">Dipinjam</a></th>
-          <th><a href="#">Rusak</a></th>
-          <th><a href="#">Tersedia</a></th>
-          <th><a href="#">Letak</a></th>
+          <th><a href="#">Tahun</a></th>
           <th class="actions">Actions</th>
         </tr>
       </thead>
@@ -62,16 +59,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -92,16 +84,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -120,16 +107,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -148,16 +130,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -176,16 +153,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -204,16 +176,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -232,16 +199,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -260,16 +222,11 @@ include_once("inc/essentials.php");
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>

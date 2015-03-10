@@ -68,27 +68,33 @@ $tile[] = array("type"=>"slide","group"=>0,"x"=>0,"y"=>0.99,'width'=>1.25,'heigh
 	"slidePercent"=>0.40,
 	"slideDir"=>"up", // can be up, down, left or right
 	"doSlideText"=>true,"doSlideLabel"=>true,
-	"labelText"=>"A slide tile","labelColor"=>"#00BFFF","labelPosition"=>"top",
+	"labelText"=>"Book","labelColor"=>"#00BFFF","labelPosition"=>"top",
 );
 
+$tile[] = array("type"=>"slide","group"=>0,"x"=>1.5,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#00BFFF","url"=>"Ebooks.php",
+	"text"=>"<h3>E-Book</h3>","img"=>"img/metro_slide_300x150_2.png","imgSize"=>1,
+	"slidePercent"=>0.40,
+	"slideDir"=>"up", // can be up, down, left or right
+	"doSlideText"=>true,"doSlideLabel"=>true,
+	"labelText"=>"E-Book","labelColor"=>"#00BFFF","labelPosition"=>"top",
+);
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>1.5,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#11528f","url"=>"typography.php",
-"content"=>
-"<div style='line-height:30px; font-weight:300; margin-top:100px; margin-left:5px;'>
-<div style='font-size:57px;line-height:30px;'>E Book</div>
-</div>");
+$tile[] = array("type"=>"slide","group"=>0,"x"=>3,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#00BFFF","url"=>"Videos.php",
+	"text"=>"<h3>Video</h3>","img"=>"img/metro_slide_300x150_2.png","imgSize"=>1,
+	"slidePercent"=>0.40,
+	"slideDir"=>"up", // can be up, down, left or right
+	"doSlideText"=>true,"doSlideLabel"=>true,
+	"labelText"=>"Video","labelColor"=>"#00BFFF","labelPosition"=>"top",
+);
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>3,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#11528f","url"=>"typography.php",
-"content"=>
-"<div style='line-height:30px; font-weight:300; margin-top:100px; margin-left:20px;'>
-<div style='font-size:57px;line-height:30px;'>Video</div>
-</div>");
+$tile[] = array("type"=>"slide","group"=>0,"x"=>4.5,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#00BFFF","url"=>"Audios.php",
+	"text"=>"<h3>Audio</h3>","img"=>"img/metro_slide_300x150_2.png","imgSize"=>1,
+	"slidePercent"=>0.40,
+	"slideDir"=>"up", // can be up, down, left or right
+	"doSlideText"=>true,"doSlideLabel"=>true,
+	"labelText"=>"Audio","labelColor"=>"#00BFFF","labelPosition"=>"top",
+);
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>4.5,"y"=>0.99,'width'=>1.25,'height'=>1.25,"background"=>"#11528f","url"=>"typography.php",
-"content"=>
-"<div style='line-height:30px; font-weight:300; margin-top:100px; margin-left:25px;'>
-<div style='font-size:57px;line-height:30px;'>Audio</div>
-</div>");
 
 
 /* line 3 */
