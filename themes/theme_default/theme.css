@@ -223,7 +223,7 @@ textarea{
 }
 input,select,textarea{
 	margin:3px 3px 3px 3px;
-	padding: 2px 3px;
+	padding: 5px 100px;
 }
 input[type=button], button{
 	background-color:#555;
