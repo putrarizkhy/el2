@@ -234,6 +234,66 @@ footer:hover{
 	transition: all 0.3s ease-in-out;
 }
 
+#a.Member{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/member1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#a.Photo{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/search1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#a.cd{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/pusmul1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#a.ddc{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/code1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#a.Location{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/rack-book1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#a.comment{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/comment1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 #side{
 
 margin-top: 150px;	

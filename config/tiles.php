@@ -106,19 +106,19 @@ $tile[] = array("type"=>"scrollText","group"=>0,"x"=>0,"y"=>2.25,"width"=>2,"hei
 "It lacks many features of the premium version."
 ),"scrollSpeed"=>2500);
 
-$tile[] = array("type"=>"slideshow","group"=>0,"x"=>2.25,"y"=>2.25,"width"=>0.5,"height"=>0.5,"background"=>"#6950ab","url"=>"",
+$tile[] = array("type"=>"slideshow","group"=>0,"x"=>2.25,"y"=>2.25,"width"=>0.5,"height"=>0.5,"background"=>"#6950ab","url"=>"Members.php",
 	"images"=>array("img/img1.png","img/img2.jpg","img/img3.jpg"),
 	"effect"=>"slide-right","speed"=>5000,"arrows"=>true,
 	"labelText"=>"Member","labelColor"=>"#11528f","labelPosition"=>"bottom",
-	"classes"=>"noClick");
+	"classes"=>"");
 
-$tile[] = array("type"=>"slideshow","group"=>0,"x"=>3,"y"=>2.25,"width"=>0.5,"height"=>0.5,"background"=>"#6950ab","url"=>"",
+$tile[] = array("type"=>"slideshow","group"=>0,"x"=>3,"y"=>2.25,"width"=>0.5,"height"=>0.5,"background"=>"#6950ab","url"=>"Photos.php",
 	"images"=>array("img/img1.png","img/img2.jpg","img/img3.jpg"),
 	"effect"=>"slide-right","speed"=>5000,"arrows"=>true,
 	"labelText"=>"Foto","labelColor"=>"#11528f","labelPosition"=>"bottom",
-	"classes"=>"noClick");
+	"classes"=>"");
 
-$tile[] = array("type"=>"scrollText","group"=>0,"x"=>3.75,"y"=>2.25,"width"=>2,"height"=>0.5,"background"=>"#FF8000","url"=>"http://metro-webdesign.info",
+$tile[] = array("type"=>"scrollText","group"=>0,"x"=>3.75,"y"=>2.25,"width"=>2,"height"=>0.5,"background"=>"#FF8000","url"=>"cds.php",
 "title"=>"Pustaka Multimedia","text"=>array(
 "You're now using the lite version of the metro template!",
 "It's meant to just test the template.",
@@ -128,13 +128,13 @@ $tile[] = array("type"=>"scrollText","group"=>0,"x"=>3.75,"y"=>2.25,"width"=>2,"
 
 /* line 4 */
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>0.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"typography.php",
+$tile[] = array("type"=>"custom","group"=>0,"x"=>0.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"DDCs.php",
 "content"=>
 "<div style='line-height:30px; font-weight:300; margin-top:10px; margin-left:10px;'>
 <div style='font-size:27px;line-height:30px;'>Kode DDC</div>
 </div>");
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>1.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"typography.php",
+$tile[] = array("type"=>"custom","group"=>0,"x"=>1.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"Locations.php",
 "content"=>
 "<div style='line-height:30px; font-weight:300; margin-top:40px; margin-left:10px;'>
 <div style='font-size:20px;line-height:15px;'>Location</div>
@@ -146,7 +146,7 @@ $tile[] = array("type"=>"custom","group"=>0,"x"=>2.5,"y"=>2.75,'width'=>0.65,'he
 <div style='font-size:20px;line-height:15px;'>Laporan</div>
 </div>");
 
-$tile[] = array("type"=>"custom","group"=>0,"x"=>3.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"typography.php",
+$tile[] = array("type"=>"custom","group"=>0,"x"=>3.5,"y"=>2.75,'width'=>0.65,'height'=>0.65,"background"=>"#11528f","url"=>"Comments.php",
 "content"=>
 "<div style='line-height:30px; font-weight:300; margin-top:40px; margin-left:8px;'>
 <div style='font-size:18px;line-height:15px;'>Komentar</div>

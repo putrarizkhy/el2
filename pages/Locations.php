@@ -1,11 +1,7 @@
 <?php
 $subNav = array(
-	"Kategori Buku ; CatBooks.php ; #509601;",
-  "Kategori Ebook ; CatEbooks.php ; #509601;",
-	"Kategori Video ; CatVideos.php ; #509601;",
-  "Kategori Audio ; CatAudios.php ; #509601;",
-  "Kategori Foto ; CatPhotos.php ; #509601;",
-  "Kategori CD Pembelajaran ; Catcds.php ; #509601;",
+	"Daftar Lokasi Buku ; Locations.php ; #509601;",
+  
 );
 
 
@@ -23,14 +19,13 @@ include_once("inc/essentials.php");
 
 <div class="sidebarpage">
 
-  <div id="a" class="Category imageNavinside">&nbsp;</div>
+  <div id="a" class="Location imageNavinside">&nbsp;</div>
 	
   <div>
     <ul id="side">
   <h3>
-    <a>Tambah Daftar Kategori</a>
+    <a>Tambah Lokasi Buku</a>
   </h3>
-  
   </ul>
 </div>
                         
@@ -42,10 +37,6 @@ include_once("inc/essentials.php");
       <thead>
         <tr class="title_table">
           <th>ID</th>
-          <th><a href="#">Kategori</a></th>
-          <th><a href="#">Lama Peminjaman</a></th>
-          <th><a href="#">Denda Terlambat</a></th>
-          <th><a href="#">DDC</a></th>
           <th><a href="#">Lokasi</a></th>
           <th><a href="#">Keterangan</a></th>
           <th><a href="#">Dibuat</a></th>
@@ -62,105 +53,163 @@ include_once("inc/essentials.php");
 
         <tr class="altrow ">
 
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>3</td>
-          <td>2000</td>
-          <td>Ilmiah</td>
+          <td>12</td>
           <td>Rak 1</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
           
           <td class="actions">
+            
+            
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
 
           </td>
         </tr>
 
         <tr class="altrow ">
 
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>3</td>
-          <td>2000</td>
-          <td>Ilmiah</td>
+          <td>12</td>
           <td>Rak 1</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
           
           <td class="actions">
+            
+            
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
 
           </td>
         </tr>
 
         <tr class="altrow ">
 
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>3</td>
-          <td>2000</td>
-          <td>Ilmiah</td>
+          <td>12</td>
           <td>Rak 1</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
           
           <td class="actions">
+            
+            
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
 
           </td>
         </tr>
 
         <tr class="altrow ">
 
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>3</td>
-          <td>2000</td>
-          <td>Ilmiah</td>
+          <td>12</td>
           <td>Rak 1</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
           
           <td class="actions">
+            
+            
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
 
           </td>
         </tr>
 
         <tr class="altrow ">
 
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>3</td>
-          <td>2000</td>
-          <td>Ilmiah</td>
+          <td>12</td>
           <td>Rak 1</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
           
           <td class="actions">
+            
+            
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
             <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
 
+           
+
           </td>
         </tr>
 
-        
+        <tr class="altrow ">
+
+          <td>12</td>
+          <td>Rak 1</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
+          
+          <td class="actions">
+            
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
+
+          </td>
+        </tr>
+
+        <tr class="altrow ">
+
+          <td>12</td>
+          <td>Rak 1</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
+          
+          <td class="actions">
+            
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
+
+          </td>
+        </tr>
+
+        <tr class="altrow ">
+
+          <td>12</td>
+          <td>Rak 1</td>
+          <td style="text-align:left;">Bawah</td>
+          <td>2015-03-02</td>
+          <td>2015-03-02</td>
+          
+          <td class="actions">
+            
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+
+           
+
+          </td>
+        </tr>
 
         
         
