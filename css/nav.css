@@ -75,9 +75,11 @@ nav>a>img{
 	-webkit-transition:  height 0.2s, box-shadow 0.4s ease-out;
 	-o-transition:  height 0.2s, box-shadow 0.4s ease-out;	
 }
+
 #subNav>a:hover{
 	height: 28px;
 }
 .subNavItemActive{
 	padding: 2px 7px 3px 7px !important;
 }
+

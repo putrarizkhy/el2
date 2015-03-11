@@ -99,7 +99,7 @@ $tile[] = array("type"=>"slide","group"=>0,"x"=>4.5,"y"=>0.99,'width'=>1.25,'hei
 
 /* line 3 */
 
-$tile[] = array("type"=>"scrollText","group"=>0,"x"=>0,"y"=>2.25,"width"=>2,"height"=>0.5,"background"=>"#FF8000","url"=>"http://metro-webdesign.info",
+$tile[] = array("type"=>"scrollText","group"=>0,"x"=>0,"y"=>2.25,"width"=>2,"height"=>0.5,"background"=>"#FF8000","url"=>"Catbooks.php",
 "title"=>"Kategori","text"=>array(
 "You're now using the lite version of the metro template!",
 "It's meant to just test the template.",

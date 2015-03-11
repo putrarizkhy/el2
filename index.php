@@ -149,6 +149,7 @@ require_once("inc/seo.php");
     <noscript><style>#tileContainer{display:block}</style></noscript>
 </head>
 <body class="full <?php echo $device?>">
+
 <?php
 triggerEvent("bodyBegin");
 
@@ -180,6 +181,7 @@ if($bgImage!=""){
   		<?php
 		if(!$bot || ($bot && $reqUrl == "")){
 		?>
+		
     	<div id="tileContainer" 
 			<?php if($bot && $reqUrl==""){
 				 echo "style='display:block;'";

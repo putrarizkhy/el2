@@ -224,6 +224,16 @@ footer:hover{
 	transition: all 0.3s ease-in-out;
 }
 
+#a.Category{  
+	clear:both; position:absolute; left:8px; top:-150px; width: 167px; height: 287px; 
+	background-image:url(../img/categories1.png);
+	background-repeat:no-repeat;
+	background-position:right 175px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 #side{
 
 margin-top: 150px;	
