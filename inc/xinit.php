@@ -1,5 +1,3 @@
-<div id="subNavTemp">
-<div id="subNav">
 <?php
 $tileTypes = array();
 $tile = array();
@@ -31,11 +29,11 @@ function makeLinkHref($l){
 	{
 		return $l;
 	}
-	/*if(array_key_exists($l,$pageURL)){
+	if(array_key_exists($l,$pageURL)){
 		$lu = strtolower(chars($pageURL[$l]));
 	}else{
 		$lu = strtolower(chars("url=".$l));
-	}*/
+	}
 	
 	if($bot && !$nojsuser){
 		return "#!/".stripSpaces($lu);	
@@ -67,20 +65,5 @@ function passToJS(){
 		global ${$phpName};
 		echo $jsName." = '".addslashes(${$phpName})."';";
 	}
-};
-
-if(isset($subNav)){
-	foreach($subNav as $navItem){
-		$navItem = explode(";",$navItem);
-		echo "<a style='background-color: ".$navItem[2].";' ".makeLink(trim($navItem[1])).">".trim($navItem[0])."</a>";
-	}
-}
-?>
-</div>
-</div>
-
-<?php
-function metroLink($url){
-	echo " ".makeLink(trim($url))." rel='metro-link' ";
 }
 ?>

@@ -20,11 +20,11 @@ nav>a:hover{
 nav img{
 	height:32px;
 }
-.navActive{
+/*.navActive{
 	background-color:#509601 !important;
-}
+}*/
 .navActive:hover{
-	background-color:#F60;
+	background-color:#93CDEB;
 }
 /* Subnav, on each page */
 #subNav a{	
@@ -44,7 +44,7 @@ header{/* the header on top */
 }
 #headerWrapper{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#503C3C3C,endColorstr=#503C3C3C); 
-	background-color:rgba(60,60,60,0.3);
+	background-color:rgba(244, 242, 242, 0.3);
 	border-bottom:1px #999 solid;
 	/*box-shadow:0 0 5px #555;*/
 }

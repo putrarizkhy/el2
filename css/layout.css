@@ -58,6 +58,7 @@ header{
 	position:relative;
 	float:left;
 	display:inline-block;
+	margin-left: 60px;
 }
 #headerTitles>h1{
 	margin:7px 0 3px 0;
