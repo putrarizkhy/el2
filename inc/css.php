@@ -48,13 +48,13 @@ if($groupDirection == "vertical" && $scrollHeader == true){
 }
 if(!$scrollHeader){?>
 	#subNavWrapper{
-	    position:fixed;
+	    position:relative;
 	    right:0;
 	    left:0;
 	}
-	#centerWrapper{
+	/*#centerWrapper{
 	    margin-top:40px;
-	}
+	}*/
 <?php
 }
 if($maxPageWidth != "900"){

@@ -32,14 +32,14 @@ include_once("inc/essentials.php");
 </div>
 
 <div class="mask1">
-  <div class="actions">
-    <table class="table hovered" cellpadding="0" cellspacing="0">
+  <div class="transpa actions">
+    <table class="tablese hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
-          <th>ID</th>
-          <th><a href="#">Kode Ddc</a></th>
-          <th><a href="#">Keterangan</a></th>
-          <th class="actions">Actions</th>
+          <th class="largest-row">ID</th>
+          <th class="largest-row"><a href="#">Kode Ddc</a></th>
+          <th class="largest-row"><a href="#">Keterangan</a></th>
+          <th class="largest-row actions">Actions</th>
         </tr>
       </thead>
       <tbody id="booktable">

@@ -38,7 +38,7 @@ $disabledPluginsMobile = array(); // add the folder names here if you want to sp
 
 /* LAYOUT CONFIG */
 
-$theme = "theme_default"; // name of the subfolder in themes directory for the theme you want
+
 
 $font = ""; // leave blank if you want to use the default one, otherwise  ex:  "'Open Sans', Segoe UI light, Tahoma,Helvetica,sans-serif"
 $googleFontURL = "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600"; // leave blank if you don't want a special one
@@ -86,12 +86,12 @@ Just copy paste this and fill in :
 $pageTitles[''] = "";
 */
 /* PAGE OPTIONS */
-/*	
+	
 $pageTitles['welcome.php'] = "Welcome to this Site";
 $pageTitles['typography.php'] = "Typography of the Metro Template";
 $pageTitles['accordions.php'] = "Accordions example page";
 $pageTitles['sidebars.php'] = "Sidebars";
-*/
+
 /* Page url, this will be visible in the url bar, for example if you fill in "welcome" the url for that page will become yoursite.com/#!/welcome */
 $pageURL[''] = "";
 $pageURL[''] = "";
@@ -473,7 +473,7 @@ $cssFiles = array( /* Add your css files to this array */
 	'css/layout.css',
 	'css/nav.css',
 	'css/tiles.css',
-	'themes/'.$theme.'/theme.css',	
+	/*'themes/'.$theme.'/theme.css',*/	
 );
 $jsFiles = array( /* Add your js files to this array */
 	'js/functions.js',
@@ -635,16 +635,21 @@ if($bgImage!=""){
 <header>
 	<div id="headerWrapper">
 		<div id="headerCenter">
+			<a id="headerlogo">
+				
+					<img src="img/icons/Logo-program EL-DP-07.png" style="width: 65px; margin: 0 0 0 -240px;">
+				
+			</a>
 			<div id="headerTitles">
 				<h1><a href="<?php if($bot){echo "index.php";}?>#!"><?php echo $siteName?></a></h1>
 		   		<h2><?php echo $siteDesc;?></h2>
 		    </div>
 		    <nav>
             	
-		  		 <a id="group0">
-				<img src="img/icons/home-01.png" alt="home"/>
+		  		 <a >
+				<img src="img/icons/home-01.png" id="homebutton" alt="home"/>
 					Home
-				</a>;
+				</a>
 
 			</nav>
 		</div>

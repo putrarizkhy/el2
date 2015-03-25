@@ -36,8 +36,8 @@ include_once("inc/essentials.php");
 </div>
 
 <div class="mask1">
-  <div class="actions">
-    <table class="table hovered" cellpadding="0" cellspacing="0">
+  <div class="transp actions">
+    <table class="tables hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
           <th>ID Pustaka</th>

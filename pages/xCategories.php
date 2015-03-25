@@ -1,38 +1,39 @@
+<?php
+$subNav = array(
+	"Kategori Buku ; CatBooks.php ; #509601;",
+  "Kategori Ebook ; CatEbooks.php ; #509601;",
+  "Kategori Video ; CatVideos.php ; #509601;",
+  "Kategori Audio ; CatAudios.php ; #509601;",
+  "Kategori Foto ; CatPhotos.php ; #509601;",
+  "Kategori CD Pembelajaran ; Catcds.php ; #509601;",
+);
 
+
+set_include_path("../");
+include_once("inc/essentials.php");
+
+
+?>
 
 <script>
 /*$mainNav.set("tilegroup 2")*/
 </script>
 
-<div id="uppermenu">
-  <ul>
-    <li>
-    <a>Daftar Buku</a>
-    </li>
-    <li>
-    <a>Buku Favorit</a>
-    </li><li>
-    <a>Pencarian Buku</a>
-    </li>
-  </ul>
 
-</div>
 
 <div class="sidebarpage">
 
-    <div id="a" class="book imageNavinside">&nbsp;</div>
-  	
-    <div>
-        <ul id="side">
-      <h3>
-        <a>Tambah Daftar Buku</a>
-      </h3>
-      <h3>
-        <a>Cetak Daftar Buku</a>
-      </h3>
-      </ul>
-    </div>
-                          
+  <div id="a" class="Audio imageNavinside">&nbsp;</div>
+	
+  <div>
+    <ul id="side">
+  <h3>
+    <a>Tambah Daftar Kategori</a>
+  </h3>
+  
+  </ul>
+</div>
+                        
 </div>
 
 <div class="mask1">
@@ -40,15 +41,12 @@
     <table class="tables hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
-          <th>ID</th>
-          <th class="largest-row"><a href="#">Judul</a></th>
+          <th>ID Pustaka</th>
+          <th><a href="#">Judul</a></th>
           <th><a href="#">Kategori</a></th>
-          <th><a href="#">Penerbit</a></th>
+          <th><a href="#">Penyanyi</a></th>
           <th><a href="#">Pengarang</a></th>
-          <th><a href="#">Dipinjam</a></th>
-          <th><a href="#">Rusak</a></th>
-          <th><a href="#">Tersedia</a></th>
-          <th><a href="#">Letak</a></th>
+          <th><a href="#">Tahun</a></th>
           <th class="actions">Actions</th>
         </tr>
       </thead>
@@ -62,27 +60,22 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
-          <td class=>
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class="view"></i> Lihat</a>
+          <td class="actions">
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="edit"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="favorit"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="print"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="delete"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
 
            
 
@@ -92,16 +85,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -120,16 +108,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -148,16 +131,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -176,16 +154,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -204,16 +177,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -232,16 +200,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
@@ -260,16 +223,11 @@
         <tr class="altrow ">
 
           <td>12</td>
-          <td style="text-align:left;">Buku baru</td>
-          <td>Fiksi</td>
-          <td>monitor publisher</td>
-          <td>Prof.Mul</td>
-          <td>3</td>
-          <td>2</td>
-          <td>
-            5
-          </td>
-          <td>H5</td>
+          <td>how deep is your love</td>
+          <td style="text-align:left;">Audio baru</td>
+          <td>Bee gees</td>
+          <td>au</td>
+          <td>2013</td>
           
           <td class="actions">
             <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>

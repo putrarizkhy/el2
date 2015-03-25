@@ -231,13 +231,3 @@
 .tileCenteredSlide.bottom:hover>.container1{bottom:100%;}
 .tileCenteredSlide.bottom:hover>.container2{bottom:-0%;}\
 
-
-.tileCentered>.container>.tifont>h3{
-	display:table-cell;
-	position: relative;
-	vertical-align: middle;
-	font-weight: 300;
-	font-size: 20px;
-	padding:0 0 8px 0;	
-	transition:color 200ms !important;
-}
