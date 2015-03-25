@@ -771,3 +771,11 @@ dl.separator dt:first-child:after { display: none; }
 .view{
 	background-image: url(../img/view.png)
 }
+
+
+#subNav{
+	position: absolute;
+	right: 50px;
+	top:-10px;
+
+}

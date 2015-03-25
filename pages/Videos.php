@@ -1,24 +1,10 @@
-<?php
-$subNav = array(
-	"Daftar Video ; Videos.php ; #509601;",
-  "Video Favorit ; favVideos.php ; #509601;",
-	"Cari ; findVideos.php ; #509601;",
-);
-
-
-set_include_path("../");
-include_once("inc/essentials.php");
-
-
-?>
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-
-
 <div class="sidebarpage">
+
+  <div id="subNav">
+      <a style="background-color:  #509601;" href="#!/">Daftar Video</a>
+      <a style="background-color:  #509601;" href="#!/">Video Favorit</a>
+      <a style="background-color:  #509601;" href="#!/">Cari</a>
+  </div>
 
   <div id="a" class="Video imageNavinside">&nbsp;</div>
 	
@@ -190,15 +176,15 @@ include_once("inc/essentials.php");
           <td>2013</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/view.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a><br/>
 
           </td>
         </tr>
@@ -250,13 +236,7 @@ include_once("inc/essentials.php");
 
           </td>
         </tr>
-
-        
-        
-        
-
-
-        
+   
       </tbody>
     </table>
     <!--div class="bottom_line1">&nbsp;</div-->
