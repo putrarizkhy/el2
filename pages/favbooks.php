@@ -1,25 +1,11 @@
-<?php
-$subNav = array(
-	"Daftar Buku ; books.php ; #509601;",
-  "Buku Favorit ; favbooks.php ; #509601;",
-	"Cari ; findbooks.php ; #509601;",
-);
-
-
-set_include_path("../");
-include_once("inc/essentials.php");
-
-
-?>
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-
-
 <div class="sidebarpage">
-	<div id="a" class="book imageNavinside">&nbsp;</div>
+
+  <div id="subNav">
+      <a href="#!/url=books.php"><img src="img/Logomenu1-12.png" class="upbutton"> Daftar Buku</a>
+      <a href="#!/url=favbooks.php"><img src="img/Logomenu2-13.png" class="upbutton"> Buku Favorit</a>
+      <a href="#!/url=findbooks.php"><img src="img/Logomenu3-14.png" class="upbutton"> Cari</a>
+  </div>
+<div id="a" class="book imageNavinside">&nbsp;</div>
   
   <div>
     <ul id="side">
@@ -34,8 +20,8 @@ include_once("inc/essentials.php");
 </div>
 
 <div class="mask1">
-  <div class="actions">
-    <table class="table hovered" cellpadding="0" cellspacing="0">
+  <div class="transp actions">
+    <table class="tables hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
           <th>ID</th>
@@ -72,17 +58,15 @@ include_once("inc/essentials.php");
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Lepaskan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -102,15 +86,15 @@ include_once("inc/essentials.php");
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Lepaskan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -130,15 +114,15 @@ include_once("inc/essentials.php");
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Lepaskan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -158,15 +142,15 @@ include_once("inc/essentials.php");
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Lepaskan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -187,15 +171,15 @@ include_once("inc/essentials.php");
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Lepaskan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>

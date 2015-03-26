@@ -1,24 +1,10 @@
-
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-<div id="uppermenu">
-  <ul>
-    <li>
-    <a>Daftar Buku</a>
-    </li>
-    <li>
-    <a>Buku Favorit</a>
-    </li><li>
-    <a>Pencarian Buku</a>
-    </li>
-  </ul>
-
-</div>
-
 <div class="sidebarpage">
+
+  <div id="subNav">
+      <a href="#!/url=books.php"><img src="img/Logomenu1-12.png" class="upbutton"> Daftar Buku</a>
+      <a href="#!/url=favbooks.php"><img src="img/Logomenu2-13.png" class="upbutton"> Buku Favorit</a>
+      <a href="#!/url=findbooks.php"><img src="img/Logomenu3-14.png" class="upbutton"> Cari</a>
+  </div>
 
     <div id="a" class="book imageNavinside">&nbsp;</div>
   	
@@ -73,18 +59,16 @@
           </td>
           <td>H5</td>
           
-          <td class=>
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class="view"></i> Lihat</a>
+          <td class="actions">
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="edit"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="favorit"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="print"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class="delete"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -104,15 +88,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -132,15 +116,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -160,15 +144,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -188,15 +172,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -216,15 +200,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -244,15 +228,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -272,15 +256,15 @@
           <td>H5</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" ><i class=" icon-new-tab on-right"></i> Lihat</a>
+            <a class="gotolinkanchor" data-title="View Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-17.png"/> Lihat</a><br/>
             
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Jadikan Favorit</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-18.png"/> Jadikan Favorit</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Print Barcode</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-19.png"/> Print Barcode</a><br/>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>

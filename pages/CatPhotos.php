@@ -1,27 +1,13 @@
-<?php
-$subNav = array(
-	"Kategori Buku ; CatBooks.php ; #509601;",
-  "Kategori Ebook ; CatEbooks.php ; #509601;",
-	"Kategori Video ; CatVideos.php ; #509601;",
-  "Kategori Audio ; CatAudios.php ; #509601;",
-  "Kategori Foto ; CatPhotos.php ; #509601;",
-  "Kategori CD Pembelajaran ; Catcds.php ; #509601;",
-);
-
-
-set_include_path("../");
-include_once("inc/essentials.php");
-
-
-?>
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-
-
 <div class="sidebarpage">
+
+  <div id="subNav">
+      <a href="#!/url=CatBooks.php"><img src="img/Logomenu1-12.png" class="upbutton"> Buku</a>
+      <a href="#!/url=CatEbooks.php"><img src="img/Logomenu1-12.png" class="upbutton"> Ebook</a>
+      <a href="#!/url=CatVideos.php"><img src="img/Logomenu1-12.png" class="upbutton"> Video</a>
+      <a href="#!/url=CatAudios.php"><img src="img/Logomenu1-12.png" class="upbutton"> Audio</a>
+      <a href="#!/url=CatPhotos.php"><img src="img/Logomenu1-12.png" class="upbutton"> Foto</a>
+      <a href="#!/url=Catcds.php"><img src="img/Logomenu1-12.png" class="upbutton"> CD Pembelajaran</a>
+  </div>
 
   <div id="a" class="Category imageNavinside">&nbsp;</div>
 	
@@ -37,8 +23,8 @@ include_once("inc/essentials.php");
 </div>
 
 <div class="mask1">
-  <div class="actions">
-    <table class="table hovered" cellpadding="0" cellspacing="0">
+  <div class="transp actions">
+    <table class="tables hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
           <th>ID</th>
@@ -65,25 +51,10 @@ include_once("inc/essentials.php");
           <td>2012-03-02</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-          </td>
-        </tr>
-
-        <tr class="altrow ">
-
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
-          
-          <td class="actions">
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
-
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -97,25 +68,10 @@ include_once("inc/essentials.php");
           <td>2012-03-02</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-          </td>
-        </tr>
-
-        <tr class="altrow ">
-
-          <td>52</td>
-          <td>Fiksi</td>
-          <td>asd</td>
-          <td>2012-12-03</td>
-          <td>2012-03-02</td>
-          
-          <td class="actions">
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
-
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -129,9 +85,44 @@ include_once("inc/essentials.php");
           <td>2012-03-02</td>
           
           <td class="actions">
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Edit</a>
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
+
+          </td>
+        </tr>
+
+        <tr class="altrow ">
+
+          <td>52</td>
+          <td>Fiksi</td>
+          <td>asd</td>
+          <td>2012-12-03</td>
+          <td>2012-03-02</td>
+          
+          <td class="actions">
+
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
+
+          </td>
+        </tr>
+
+        <tr class="altrow ">
+
+          <td>52</td>
+          <td>Fiksi</td>
+          <td>asd</td>
+          <td>2012-12-03</td>
+          <td>2012-03-02</td>
+          
+          <td class="actions">
+
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-16.png"/> Edit</a><br/>
+            
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>

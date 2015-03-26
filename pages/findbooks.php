@@ -1,24 +1,10 @@
-<?php
-$subNav = array(
-	"Daftar Buku ; books.php ; #509601;",
-  "Buku Favorit ; favbooks.php ; #509601;",
-	"Cari ; findbooks.php ; #509601;",
-);
-
-
-set_include_path("../");
-include_once("inc/essentials.php");
-
-
-?>
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-
-
 <div class="sidebarpage">
+
+  <div id="subNav">
+      <a href="#!/url=books.php"><img src="img/Logomenu1-12.png" class="upbutton"> Daftar Buku</a>
+      <a href="#!/url=favbooks.php"><img src="img/Logomenu2-13.png" class="upbutton"> Buku Favorit</a>
+      <a href="#!/url=findbooks.php"><img src="img/Logomenu3-14.png" class="upbutton"> Cari</a>
+  </div>
 	<div id="a" class="book imageNavinside">&nbsp;</div>
   
   <div>
@@ -45,7 +31,7 @@ include_once("inc/essentials.php");
           <fieldset style="display:none;"><input type="hidden" name="_method" value="POST"></fieldset>                                    <fieldset>
           <div class="input-control text" style="width:70%;">
               <input type="text" placeholder="ketikkan pencarian " name="data[Book][keyword]">
-              <button type="submit" class="btn-search" id="searchbooksubmit"></button>
+              <button type="submit" class="btn-search" id="searchbooksubmit"><img src="img/Logomenu3-14.png" class="scbutton"></button>
           </div>
         </form>                                  
       </div>

@@ -53,7 +53,6 @@ header{
 	min-height:20px;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#503C3C3C,endColorstr=#503C3C3C); 
 	background-color:rgba(244, 242, 242, 0.3);
-	border-bottom:1px #999 solid;
 	/*box-shadow:0 0 5px #555;*/
 }
 #headerCenter{
@@ -108,6 +107,7 @@ header{
 	padding:35px 20px 70px 20px;
 	display:none;	
 	overflow:visible;
+	width: 1111px;
 }
 
 
@@ -332,7 +332,7 @@ footer:hover{
 	top: -155px;
 	width: 167px;
 	height: 287px; 
-	background-image:url(../img/member1.png);
+	background-image:url(../img/member.png);
 	background-repeat: no-repeat;
     background-position: right 137px;
    	-moz-transition: all 0.3s ease-in-out;
@@ -348,7 +348,7 @@ footer:hover{
 	top: -155px;
 	width: 167px;
 	height: 287px; 
-	background-image:url(../img/search1.png);
+	background-image:url(../img/foto.png);
 	background-repeat: no-repeat;
     background-position: right 137px;
    	-moz-transition: all 0.3s ease-in-out;
@@ -423,7 +423,8 @@ footer:hover{
 
 #side{
 
-margin-top: 150px;	
+  margin-top: 195px;
+  margin-left: -5px;
 
 }
 
@@ -557,10 +558,10 @@ input,select,textarea{
 	padding: 5px 100px;
 }
 input[type=button], button{
-	background-color:#555;
-	border:1px solid #AAA;
-	color:#FFF;
-	padding:2px 7px;
+	/*background-color:#555;
+	border:1px transparent #AAA !important;
+	color:#FFF;*/
+	padding:0px 0;
 }
 input[type=button]:hover, button:hover{
 	background-color:#777;
@@ -649,10 +650,10 @@ hr.light{border-color:#AAA;}
 }
 .tables{
 	color:#111;
-	border:1px solid #666;
 	border-top:none;
 	background-color:#FFFFFF;
 	margin: 10px 0;
+	width: 800px;
 }
 .tablese{
 	color:#111;
@@ -753,6 +754,7 @@ dl.separator dt:first-child:after { display: none; }
 }
 
 .transp{
+	width: 810px;
 	background-color: rgba(252, 252, 252, 0.3);
 	margin-top: 0px;
   	margin-left: 285px;
@@ -775,7 +777,36 @@ dl.separator dt:first-child:after { display: none; }
 
 #subNav{
 	position: absolute;
-	right: 50px;
-	top:-10px;
+	left: 300px;
+	top:-60px;
 
+}
+
+.upbutton{
+	height: 42px; 
+	width: 42px;
+	margin-top: -9px;
+}
+/*.list{
+	clear: both;
+	position: absolute;
+	left: 40px;
+	top: -155px;
+	width: 167px;
+	height: 287px;
+	background-image:url(../img/Logomenu1-12.png);
+	background-repeat: no-repeat;
+    background-position: right 137px;
+   	-moz-transition: all 0.3s ease-in-out;
+   	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}*/
+
+.scbutton{
+	  height: 28px;
+	  width: 28px;
+	  margin: -2px 0px 0px -7px;
+	  position: absolute;
+	  right: 390px;
+   	  top: 71px;
 }

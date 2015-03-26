@@ -1,23 +1,10 @@
-<?php
-$subNav = array(
-	"Daftar Komentar ; Comments.php ; #509601;",
-  "Cari ; findComments.php ; #509601;",
-);
-
-
-set_include_path("../");
-include_once("inc/essentials.php");
-
-
-?>
-
-<script>
-/*$mainNav.set("tilegroup 2")*/
-</script>
-
-
-
 <div class="sidebarpage">
+
+  <div id="subNav">
+      <a href="#!/url=Comments.php"><img src="img/Logomenu1-12.png" class="upbutton"> Daftar Komentar</a>
+      <a href="#!/url=findComments.php"><img src="img/Logomenu3-14.png" class="upbutton"> Cari</a>
+  </div>
+
 	<div id="a" class="comment imageNavinside">&nbsp;</div>
     
   <div>
@@ -28,8 +15,8 @@ include_once("inc/essentials.php");
 </div>
 
 <div class="mask1">
-  <div class="transpa actions">
-    <table class="tablese hovered" cellpadding="0" cellspacing="0">
+  <div class="transp actions">
+    <table class="tables hovered" cellpadding="0" cellspacing="0">
       <thead>
         <tr class="title_table">
           <th>ID</th>
@@ -55,9 +42,7 @@ include_once("inc/essentials.php");
           
           <td class="actions">
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -71,9 +56,7 @@ include_once("inc/essentials.php");
           
           <td class="actions">
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -87,9 +70,7 @@ include_once("inc/essentials.php");
           
           <td class="actions">
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -103,9 +84,7 @@ include_once("inc/essentials.php");
           
           <td class="actions">
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>
@@ -120,9 +99,7 @@ include_once("inc/essentials.php");
           
           <td class="actions">
 
-            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" ><i class=" icon-pencil on-right"></i> Hapus</a>
-
-           
+            <a class="gotolinkanchor" data-title="Edit Book" data-width="900px" data-height="600px" > <img width="16px" src="img/action-20.png"/> Hapus</a><br/>
 
           </td>
         </tr>

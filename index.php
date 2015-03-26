@@ -558,287 +558,352 @@ foreach($jsFiles as $jsFile){
 ?>
 <!-- Metro UI template : http://metro-webdesign.info V4.3b1 LITE -->
 <html lang="<?php echo $lang;?>">
-<head>
-	<?php triggerEvent("headStart");?>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="Description" content="<?php echo $siteMetaDesc;?>"/>
-    <meta name="keywords" content="<?php echo $siteMetaKeywords;?>"/>
-    <link rel="icon" type="image/ico" href="<?php echo $favicon_url;?>"/>
-    <meta name="viewport" content="width=1024,initial-scale=1.00, minimum-scale=1.00"/>
-    <title><?php echo $siteTitle;?></title> 
-    <?php
-    if($nojsuser){
-    	?>
-    	<meta name="robots" content="noindex,nofollow"/>
-    }else{
-    	?>
-		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"/>
-    	<?php
-    }
-    ?>
-    
-    <?php
-	
-    /*FONT*/
-    if($googleFontURL != ""){?>
-    	<link href='<?php echo $googleFontURL?>' rel='stylesheet' type='text/css'>
+	<head>
+		<?php triggerEvent("headStart");?>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="Description" content="<?php echo $siteMetaDesc;?>"/>
+	    <meta name="keywords" content="<?php echo $siteMetaKeywords;?>"/>
+	    <link rel="icon" type="image/ico" href="<?php echo $favicon_url;?>"/>
+	    <meta name="viewport" content="width=1024,initial-scale=1.00, minimum-scale=1.00"/>
+	    <title><?php echo $siteTitle;?></title> 
+	    <?php
+	    if($nojsuser){
+	    	?>
+	    	<meta name="robots" content="noindex,nofollow"/>
+	    }else{
+	    	?>
+			<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"/>
+	    	<?php
+	    }
+	    ?>
+	    
+	    <?php
+		
+	    /*FONT*/
+	    if($googleFontURL != ""){?>
+	    	<link href='<?php echo $googleFontURL?>' rel='stylesheet' type='text/css'>
+			<?php
+		}
+
+		/*CSS*/
+		echo $css;
+		include_once("inc/css.php");
+		
+		/*GA*/
+		if($googleAnalyticsCode != ""){
+			?><script type='text/javascript'>var _gaq = _gaq || [];_gaq.push(['_setAccount', '<?php echo $googleAnalyticsCode?>']);_gaq.push(['_trackPageview']);(function(){var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><?php
+		}
+		?> 
+		<!--[if IE]>
+	    <script src="js/html5.js"></script>
+	     <![endif]-->
+	    <!--[if lt IE 9]>
+	    <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	    <script src="js/html5.js"></script>
+		<![endif]-->
+		<!--[if gte IE 9]><!-->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	    <script src="js/html5.js"></script>
+		<![endif]-->
+	    <!--[if !IE]>
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<![endif]-->
+
+	    <script type="text/javascript">window.jQuery || document.write('<\/script><script type="text/javascript" src="js/jquery1102.js"><\/script>')</script>
+	    <script type="text/javascript" src="js/plugins.js"></script>
 		<?php
-	}
+		/*JS */
+		include("inc/phptojs.php");
+		if(!$bot){
+			echo $js;
+		}
 
-	/*CSS*/
-	echo $css;
-	include_once("inc/css.php");
-	
-	/*GA*/
-	if($googleAnalyticsCode != ""){
-		?><script type='text/javascript'>var _gaq = _gaq || [];_gaq.push(['_setAccount', '<?php echo $googleAnalyticsCode?>']);_gaq.push(['_trackPageview']);(function(){var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><?php
-	}
-	?> 
-	<!--[if IE]>
-    <script src="js/html5.js"></script>
-     <![endif]-->
-    <!--[if lt IE 9]>
-    <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/html5.js"></script>
-	<![endif]-->
-	<!--[if gte IE 9]><!-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="js/html5.js"></script>
-	<![endif]-->
-    <!--[if !IE]>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<![endif]-->
+	    triggerEvent("headEnd");
+		?>
+	    <noscript><style>#tileContainer{display:block}</style></noscript>
+	</head>
+	<body class="full <?php echo $device?>">
 
-    <script type="text/javascript">window.jQuery || document.write('<\/script><script type="text/javascript" src="js/jquery1102.js"><\/script>')</script>
-    <script type="text/javascript" src="js/plugins.js"></script>
 	<?php
-	/*JS */
-	include("inc/phptojs.php");
-	if(!$bot){
-		echo $js;
+	triggerEvent("bodyBegin");
+
+	/*BG image*/
+	if($bgImage!=""){
+		echo "<img src='".$bgImage."' alt='background-image' id='bgImage'/>";
 	}
-
-    triggerEvent("headEnd");
 	?>
-    <noscript><style>#tileContainer{display:block}</style></noscript>
-</head>
-<body class="full <?php echo $device?>">
+	<header>
+		<div id="headerWrapper">
+			<div id="headerCenter">
+				<a id="headerlogo">
+					
+						<img src="img/icons/Logo-program EL-DP-07.png" style="width: 65px; margin: 0 0 0 -240px;">
+					
+				</a>
+				<div id="headerTitles">
+					<h1><a href="<?php if($bot){echo "index.php";}?>#!"><?php echo $siteName?></a></h1>
+			   		<h2><?php echo $siteDesc;?></h2>
+			    </div>
+			    <nav>
+	            	
+			  		<a href="#!">
+					<img src="img/icons/home-01.png" id="homebutton" alt="home"/>
+						Home
+					</a>
+				</nav>
+			</div>
+	    </div>
 
-<?php
-triggerEvent("bodyBegin");
+	 <?php triggerEvent("headerEnd");?>
+	</header>
 
-/*BG image*/
-if($bgImage!=""){
-	echo "<img src='".$bgImage."' alt='background-image' id='bgImage'/>";
-}
-?>
-<header>
-	<div id="headerWrapper">
-		<div id="headerCenter">
-			<a id="headerlogo">
-				
-					<img src="img/icons/Logo-program EL-DP-07.png" style="width: 65px; margin: 0 0 0 -240px;">
-				
-			</a>
-			<div id="headerTitles">
-				<h1><a href="<?php if($bot){echo "index.php";}?>#!"><?php echo $siteName?></a></h1>
-		   		<h2><?php echo $siteDesc;?></h2>
-		    </div>
-		    <nav>
-            	
-		  		 <a href="#!">
-				<img src="img/icons/home-01.png" id="homebutton" alt="home"/>
-					Home
+	<div id="wrapper">
+		<div id="centerWrapper">
+
+	    	<div id="tileContainer" class="" style="width: 1097.5px; height: 579px; display: block;">
+	                    		
+		       	<a href="#&amp;" id="groupTitle0" class="groupTitle" style="margin-left: 0px; margin-top: 0px; display: block;" onclick="javascript:$group.goTo(0);"><h3></h3></a>
+		      	<a id="tileSlideshow0-0_35--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 56px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-56-190" data-n="0"> 
+		    
+				    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 165.901654111111px; top: 0px;"><img src="" alt=""></div>
+					<div class="imgWrapper" style="width: 192px; height: 192px; left: -26.0983458888889px; top: 0px;"><img src="" alt=""></div>
+					   
+				       
+				    <script>slideshowTiles["tileSlideshow0-0_35--0_25"] = [[],[],[],"slide-right",5000]</script>
+				    
+				    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right">
+				    <img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left">
+				    <div class="tileLabelWrapper bottom">
+				    	<div class="tileLabel bottom" style="border-bottom-color:#11528f;">Live Report</div>
+					</div> 
+			    </a>
+
+
+	      		<a href="#!/url=welcome.php" class="tile tileCentered group0 " style="margin-top: 5px; margin-left: 264px; width: 390px; height: 86px; display: block; background: rgb(255, 214, 0);" data-pos="5-264-390"> 
+			    <div class="container" style="background:#FFD600;" onmouseover="javascript:$(this).css('background','#FFF')" onmouseout="javascript:$(this).css('background','#FFD600')">
+				    <h3 style="color:#FFF" onmouseover="javascript:$(this).css('color','#509601')" onmouseout="javascript:$(this).css('color','#FFF')">
+				    	<img title="" alt="" style="margin-top:0px;margin-left:0px;" src="img/icons/box_info.png" height="48" width="48">
+				    
+				    Transaksi
+					</h3>
+			    
+			    </div>
+			    </a>
+
+
+		      	<a href="#!/url=welcome.php" class="tile tileCentered group0 " style="margin-top: 109px; margin-left: 264px; width: 390px; height: 86px; display: block; background: rgb(255, 214, 0);" data-pos="109-264-390"> 
+			    <div class="container" style="background:#FFD600;" onmouseover="javascript:$(this).css('background','#FFF')" onmouseout="javascript:$(this).css('background','#FFD600')">
+				    <h3 style="color:#FFF" onmouseover="javascript:$(this).css('color','#509601')" onmouseout="javascript:$(this).css('color','#FFF')">
+				         <img title="" alt="" style="margin-top:0px;margin-left:0px;" src="img/icons/box_info.png" height="48" width="48">
+				    
+				    Keuangan    
+					</h3>
+			    
+			    </div>
+			    </a>
+
+
+		      	<a id="tileSlideshow0-4_25--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 680px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-680-190" data-n="0"> 
+		    
+			    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 163.415616px; top: 0px;"><img src="" alt=""></div>
+				<div class="imgWrapper" style="width: 192px; height: 192px; left: -28.584384px; top: 0px;"><img src="" alt=""></div>
+			   
+			       
+			    <script>slideshowTiles["tileSlideshow0-4_25--0_25"] = [[],[],[],"slide-right",5000]</script>
+			    
+			    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right">
+			    <img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left">
+			    <div class="tileLabelWrapper bottom">
+			    	<div class="tileLabel bottom" style="border-bottom-color:#11528f;">Anouncement</div>
+			    </div> 
+			    </a>
+
+
+		      	<a href="#!/url=books.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 0px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-0-190" data-doslide="1"> 
+		    		<div class="slideText" style="
+				            height:76px; width:100%;top:190px;    ">
+				    <h3>Book</h3>    
+					</div>
+				    <div class="imageWrapper">
+				    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
+							<img src="img/Book-01.png" alt="" title="" style="width:104.5px;"> 
+				        </div>
+						<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;">
+							<div class="tileLabel top">Book</div>
+						</div>
+					</div> 
+			   
+			    </a>
+
+		      	<a href="#!/url=ebooks.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 240px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-240-190" data-doslide="1"> 
+			        <div class="slideText" style="
+				            height:76px; width:100%;top:190px;    ">
+				    <h3>E-Book</h3>    
+					</div>
+				    <div class="imageWrapper">
+				    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
+							<img src="img/ebook-02.png" alt="" title="" style="width:104.5px;"> 
+				        </div>
+						<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;">
+							<div class="tileLabel top">E-Book</div>
+						</div>
+					</div> 		   
+			    </a>
+
+		      	<a href="#!/url=videos.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 480px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-480-190" data-doslide="1">   
+			    <div class="slideText" style="
+			            height:76px; width:100%;top:190px;    ">
+			    <h3>Video</h3>    
+				</div>
+			    <div class="imageWrapper">
+			    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
+						<img src="img/video-03.png" alt="" title="" style="width:104.5px;"> 
+			        </div>
+					<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;">
+						<div class="tileLabel top">Video</div>
+					</div>
+				</div> 
+			    </a>
+
+		      	<a href="#!/url=audios.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 720px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-720-190" data-doslide="1"> 
+			    <div class="slideText" style="
+			            height:76px; width:100%;top:190px;    ">
+			    <h3>Audio</h3>    
+				</div>
+			    <div class="imageWrapper">
+			    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
+						<img src="img/audio-04.png" alt="" title="" style="width:104.5px;"> 
+			        </div>
+					<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;">
+						<div class="tileLabel top">Audio</div>
+					</div>
+				</div> 		   
+			    </a>
+
+
+		      	<a href="#!/url=catbooks.php" id="tileScroll0_0-2_25" class="tile tileScroll group0 " style="margin-top: 405px; margin-left: 0px; width: 310px; height: 70px; display: block; background: rgb(205, 220, 57);" data-pos="405-0-310"> 
+			    	<div class="tileTitle" style="margin-left:10px;">Kategori</div>
+					<div class="divScroll" style="margin-left: 12px; opacity: 1; margin-top: 0px;"></div>
+			    	<script>scrollTile("0_0-2_25",[],2500,0)</script>
+		        </a>
+
+
+		      	<a href="#!/url=members.php" id="tileSlideshow0-2_25-2_25" class="tile tileSlideshow group0 " style="margin-top: 405px; margin-left: 360px; width: 70px; height: 70px; display: block; background: rgb(0, 187, 212);" data-pos="405-360-70" data-n="0"> 
+			    
+			    <div class="imgWrapperBack" style="width: 72px; height: 72px; left: 60.662592px; top: 0px;">
+			    	<img src="" alt="">
+			    </div>
+				<div class="imgWrapper" style="width: 72px; height: 72px; left: -11.337408px; top: 0px;">
+					<img src="" alt="">
+				</div>
+
+			    <script>slideshowTiles["tileSlideshow0-2_25-2_25"] = [[],[],[],"slide-right",5000]</script>
+			    
+			    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right">
+			    <img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left">
+
+			    <div class="tileLabelWrapper bottom">
+			    	<div class="tileLabel bottom" style="border-bottom-color:#11528f;">Member</div>
+			    </div> 
+			    </a>
+
+
+		      	<a href="#!/url=photos.php" id="tileSlideshow0-3-2_25" class="tile tileSlideshow group0 " style="margin-top: 405px; margin-left: 480px; width: 70px; height: 70px; display: block; background: rgb(0, 187, 212);" data-pos="405-480-70" data-n="0"> 
+		    
+			    <div class="imgWrapperBack" style="width: 72px; height: 72px; left: 59.4682083333333px; top: 0px;">
+			    	<img src="" alt="">
+			    </div>
+				<div class="imgWrapper" style="width: 72px; height: 72px; left: -12.5317916666667px; top: 0px;">
+					<img src="" alt="">
+				</div>
+			   
+			       
+			    <script>slideshowTiles["tileSlideshow0-3-2_25"] = [[],[],[],"slide-right",5000]</script>
+			    
+			    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right">
+			    <img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left">
+			    <div class="tileLabelWrapper bottom">
+			    	<div class="tileLabel bottom" style="border-bottom-color:#11528f;">Foto</div>
+			    </div> 
+			    </a>
+
+
+		      	<a href="#!/url=cds.php" id="tileScroll0_3_75-2_25" class="tile tileScroll group0 " style="margin-top: 405px; margin-left: 600px; width: 310px; height: 70px; display: block; background: rgb(205, 220, 57);" data-pos="405-600-310"> 
+		    	<div class="tileTitle" style="margin-left:10px;">Pustaka Multimedia</div>
+				<div class="divScroll" style="margin-left: 12px; opacity: 1; margin-top: 0px;">
+				</div>
+
+		    	<script>scrollTile("0_3_75-2_25",[],2500,0)</script>
+
+		        </a>
+
+
+		      	<a href="#!/url=ddcs.php" class="tile group0 " style="margin-top: 485px; margin-left: 80px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-80-94"> 
+				    <div style="line-height:30px; font-weight:300; margin-top:10px; margin-left:10px;">
+						<div style="font-size:27px;line-height:30px;">Kode DDC</div>
+					</div>        
 				</a>
 
-			</nav>
-		</div>
-    </div>
-    <?php triggerEvent("headerEnd");?>
-</header>
-<div id="wrapper">
-	<div id="centerWrapper">
 
-    	<div id="tileContainer" class="" style="width: 1097.5px; height: 579px; display: block;">
-                    		
-       	<a href="#&amp;" id="groupTitle0" class="groupTitle" style="margin-left: 0px; margin-top: 0px; display: block;" onclick="javascript:$group.goTo(0);"><h3></h3></a>
-      	<a id="tileSlideshow0-0_35--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 56px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-56-190" data-n="0"> 
-    
-    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 165.901654111111px; top: 0px;"><img src="" alt=""></div>
-	<div class="imgWrapper" style="width: 192px; height: 192px; left: -26.0983458888889px; top: 0px;"><img src="" alt=""></div>
-   
-       
-    <script>slideshowTiles["tileSlideshow0-0_35--0_25"] = [[],[],[],"slide-right",5000]</script>
-    
-    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right"><img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left"><div class="tileLabelWrapper bottom"><div class="tileLabel bottom" style="border-bottom-color:#11528f;">Live Report</div></div> 
-    </a>
-      	<a href="#!/url=welcome.php" class="tile tileCentered group0 " style="margin-top: 5px; margin-left: 264px; width: 390px; height: 86px; display: block; background: rgb(255, 214, 0);" data-pos="5-264-390"> 
-    <div class="container" style="background:#FFD600;" onmouseover="javascript:$(this).css('background','#FFF')" onmouseout="javascript:$(this).css('background','#FFD600')">
-    <h3 style="color:#FFF" onmouseover="javascript:$(this).css('color','#509601')" onmouseout="javascript:$(this).css('color','#FFF')">
-         <img title="" alt="" style="margin-top:0px;margin-left:0px;" src="img/icons/box_info.png" height="48" width="48">
-    
-    Transaksi    </h3>
-    
-    </div>
+		      	<a href="#!/url=locations.php" class="tile group0 " style="margin-top: 485px; margin-left: 240px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-240-94"> 
+					<div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:10px;">
+						<div style="font-size:20px;line-height:15px;">Location</div>
+					</div>        
+				</a>
 
-    	
-    </a>
-      	<a href="#!/url=welcome.php" class="tile tileCentered group0 " style="margin-top: 109px; margin-left: 264px; width: 390px; height: 86px; display: block; background: rgb(255, 214, 0);" data-pos="109-264-390"> 
-    <div class="container" style="background:#FFD600;" onmouseover="javascript:$(this).css('background','#FFF')" onmouseout="javascript:$(this).css('background','#FFD600')">
-    <h3 style="color:#FFF" onmouseover="javascript:$(this).css('color','#509601')" onmouseout="javascript:$(this).css('color','#FFF')">
-         <img title="" alt="" style="margin-top:0px;margin-left:0px;" src="img/icons/box_info.png" height="48" width="48">
-    
-    Keuangan    </h3>
-    
-    </div>
 
-    	
-    </a>
-      	<a id="tileSlideshow0-4_25--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 680px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-680-190" data-n="0"> 
-    
-    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 163.415616px; top: 0px;"><img src="" alt=""></div>
-	<div class="imgWrapper" style="width: 192px; height: 192px; left: -28.584384px; top: 0px;"><img src="" alt=""></div>
-   
-       
-    <script>slideshowTiles["tileSlideshow0-4_25--0_25"] = [[],[],[],"slide-right",5000]</script>
-    
-    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right"><img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left"><div class="tileLabelWrapper bottom"><div class="tileLabel bottom" style="border-bottom-color:#11528f;">Anouncement</div></div> 
-    </a>
-      	<a href="#!/url=books.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 0px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-0-190" data-doslide="1"> 
-    
-    
-    <div class="slideText" style="
-            height:76px; width:100%;top:190px;    ">
-    <h3>Book</h3>    </div>
-    <div class="imageWrapper">
-    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
-			<img src="img/Book-01.png" alt="" title="" style="width:104.5px;"> 
-        </div>
-		<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;"><div class="tileLabel top">Book</div></div></div> 
-   
-    </a>
-      	<a href="#!/url=ebooks.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 240px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-240-190" data-doslide="1"> 
-    
-    
-    <div class="slideText" style="
-            height:76px; width:100%;top:190px;    ">
-    <h3>E-Book</h3>    </div>
-    <div class="imageWrapper">
-    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
-			<img src="img/ebook-02.png" alt="" title="" style="width:104.5px;"> 
-        </div>
-		<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;"><div class="tileLabel top">E-Book</div></div></div> 
-   
-    </a>
-      	<a href="#!/url=videos.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 480px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-480-190" data-doslide="1"> 
-    
-    
-    <div class="slideText" style="
-            height:76px; width:100%;top:190px;    ">
-    <h3>Video</h3>    </div>
-    <div class="imageWrapper">
-    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
-			<img src="img/video-03.png" alt="" title="" style="width:104.5px;"> 
-        </div>
-		<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;"><div class="tileLabel top">Video</div></div></div> 
-   
-    </a>
-      	<a href="#!/url=audios.php" class="tile tileSlide up group0 " style="margin-top: 203.4px; margin-left: 720px; width: 190px; height: 190px; padding: 0px; display: block; background: rgb(0, 187, 212);" data-pos="203_4-720-190" data-doslide="1"> 
-    
-    
-    <div class="slideText" style="
-            height:76px; width:100%;top:190px;    ">
-    <h3>Audio</h3>    </div>
-    <div class="imageWrapper">
-    	<div class="imageCenterer" style="width:190px; height:190px;line-height:188px;">
-			<img src="img/audio-04.png" alt="" title="" style="width:104.5px;"> 
-        </div>
-		<div class="tileLabelWrapper top" style="border-top-color:#00BFFF;"><div class="tileLabel top">Audio</div></div></div> 
-   
-    </a>
-      	<a href="#!/url=catbooks.php" id="tileScroll0_0-2_25" class="tile tileScroll group0 " style="margin-top: 405px; margin-left: 0px; width: 310px; height: 70px; display: block; background: rgb(205, 220, 57);" data-pos="405-0-310"> 
-    	<div class="tileTitle" style="margin-left:10px;">Kategori</div>
-	<div class="divScroll" style="margin-left: 12px; opacity: 1; margin-top: 0px;"></div>
-    <script>scrollTile("0_0-2_25",[],2500,0)</script>
-        </a>
-      	<a href="#!/url=members.php" id="tileSlideshow0-2_25-2_25" class="tile tileSlideshow group0 " style="margin-top: 405px; margin-left: 360px; width: 70px; height: 70px; display: block; background: rgb(0, 187, 212);" data-pos="405-360-70" data-n="0"> 
-    
-    <div class="imgWrapperBack" style="width: 72px; height: 72px; left: 60.662592px; top: 0px;"><img src="" alt=""></div>
-	<div class="imgWrapper" style="width: 72px; height: 72px; left: -11.337408px; top: 0px;"><img src="" alt=""></div>
-   
-       
-    <script>slideshowTiles["tileSlideshow0-2_25-2_25"] = [[],[],[],"slide-right",5000]</script>
-    
-    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right"><img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left"><div class="tileLabelWrapper bottom"><div class="tileLabel bottom" style="border-bottom-color:#11528f;">Member</div></div> 
-    </a>
-      	<a href="#!/url=photos.php" id="tileSlideshow0-3-2_25" class="tile tileSlideshow group0 " style="margin-top: 405px; margin-left: 480px; width: 70px; height: 70px; display: block; background: rgb(0, 187, 212);" data-pos="405-480-70" data-n="0"> 
-    
-    <div class="imgWrapperBack" style="width: 72px; height: 72px; left: 59.4682083333333px; top: 0px;"><img src="" alt=""></div>
-	<div class="imgWrapper" style="width: 72px; height: 72px; left: -12.5317916666667px; top: 0px;"><img src="" alt=""></div>
-   
-       
-    <script>slideshowTiles["tileSlideshow0-3-2_25"] = [[],[],[],"slide-right",5000]</script>
-    
-    <img id="sl_arrowRight" src="img/arrows/simpleArrowRight.png" alt="Slideshow - right"><img id="sl_arrowLeft" src="img/arrows/simpleArrowLeft.png" alt="Slideshow - left"><div class="tileLabelWrapper bottom"><div class="tileLabel bottom" style="border-bottom-color:#11528f;">Foto</div></div> 
-    </a>
-      	<a href="#!/url=cds.php" id="tileScroll0_3_75-2_25" class="tile tileScroll group0 " style="margin-top: 405px; margin-left: 600px; width: 310px; height: 70px; display: block; background: rgb(205, 220, 57);" data-pos="405-600-310"> 
-    	<div class="tileTitle" style="margin-left:10px;">Pustaka Multimedia</div>
-	<div class="divScroll" style="margin-left: 12px; opacity: 1; margin-top: 0px;"></div>
-    <script>scrollTile("0_3_75-2_25",[],2500,0)</script>
-        </a>
-      	<a href="#!/url=ddcs.php" class="tile group0 " style="margin-top: 485px; margin-left: 80px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-80-94"> 
-    <div style="line-height:30px; font-weight:300; margin-top:10px; margin-left:10px;">
-<div style="font-size:27px;line-height:30px;">Kode DDC</div>
-</div>        </a>
-      	<a href="#!/url=locations.php" class="tile group0 " style="margin-top: 485px; margin-left: 240px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-240-94"> 
-    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:10px;">
-<div style="font-size:20px;line-height:15px;">Location</div>
-</div>        </a>
-      	<a href="#!/url=typography.php" class="tile group0 " style="margin-top: 485px; margin-left: 400px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-400-94"> 
-    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:10px;">
-<div style="font-size:20px;line-height:15px;">Laporan</div>
-</div>        </a>
-      	<a href="#!/url=comments.php" class="tile group0 " style="margin-top: 485px; margin-left: 560px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-560-94"> 
-    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:8px;">
-<div style="font-size:18px;line-height:15px;">Komentar</div>
-</div>        </a>
-      	<a href="#!/url=typography.php" class="tile group0 " style="margin-top: 485px; margin-left: 720px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-720-94"> 
-    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:5px;">
-<div style="font-size:20px;line-height:20px;">Ebook CR</div>
-</div>        </a>
-            </div>
-        
-        <div id="subNavWrapper"></div>
-    	<div id="contentWrapper" <?php if($bot && $reqUrl != ""){ echo "style='display:block;'";}?>>   		    
-	   		<?php triggerEvent("contentWrapperBegin");?>
-            <div id="content">	        	
-				<?php
-				if($bot){	
-					if($page == "" || $page == "home"){					
-					}else{
-						if(file_exists("pages/".$reqUrl)){	
-							include("pages/".$reqUrl);
-						}else{		
-							echo $l_pageNotFoundDesc;
-						}
-					}		
-				}
-				?>
+		      	<a href="#!/url=typography.php" class="tile group0 " style="margin-top: 485px; margin-left: 400px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-400-94"> 
+				    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:10px;">
+						<div style="font-size:20px;line-height:15px;">Laporan</div>
+					</div>
+				</a>
+
+
+		      	<a href="#!/url=comments.php" class="tile group0 " style="margin-top: 485px; margin-left: 560px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-560-94"> 
+				    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:8px;">
+						<div style="font-size:18px;line-height:15px;">Komentar</div>
+					</div>
+				</a>
+
+
+		      	<a href="#!/url=typography.php" class="tile group0 " style="margin-top: 485px; margin-left: 720px; width: 94px; height: 94px; display: block; background: rgb(103, 59, 183);" data-pos="485-720-94"> 
+				    <div style="line-height:30px; font-weight:300; margin-top:40px; margin-left:5px;">
+						<div style="font-size:20px;line-height:20px;">Ebook CR</div>
+					</div>
+				</a>
 	        </div>
-    	    <?php triggerEvent("contentWrapperEnd");?>
-		</div>
-        <?php triggerEvent("centerWrapperEnd");?>
-    </div>
-	<footer>
-		<a title='Metro UI template' href='' target='_blank'></a>
-		<?php 
-		echo $siteFooter; 
-		triggerEvent("siteFooter");
-		?>
-    </footer>
-    <?php triggerEvent("wrapperEnd");?>
-</div>
-<div id="catchScroll"></div>
-<?php triggerEvent("bodyEnd");?>
-</body>
+	        
+	        <div id="subNavWrapper"></div>
+	    	<div id="contentWrapper" <?php if($bot && $reqUrl != ""){ echo "style='display:block;'";}?>>   		    
+		   		<?php triggerEvent("contentWrapperBegin");?>
+	            <div id="content">	        	
+					<?php
+					if($bot){	
+						if($page == "" || $page == "home"){					
+						}else{
+							if(file_exists("pages/".$reqUrl)){	
+								include("pages/".$reqUrl);
+							}else{		
+								echo $l_pageNotFoundDesc;
+							}
+						}		
+					}
+					?>
+		        </div>
+	    	    <?php triggerEvent("contentWrapperEnd");?>
+			</div>
+	        <?php triggerEvent("centerWrapperEnd");?>
+	    </div>
+		<footer>
+			<a title='Metro UI template' href='' target='_blank'></a>
+			<?php 
+			echo $siteFooter; 
+			triggerEvent("siteFooter");
+			?>
+	    </footer>
+	    <?php triggerEvent("wrapperEnd");?>
+	</div>
+	<div id="catchScroll"></div>
+	<?php triggerEvent("bodyEnd");?>
+	</body>
 </html>
