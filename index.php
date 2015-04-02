@@ -637,7 +637,7 @@ foreach($jsFiles as $jsFile){
 			<div id="headerCenter">
 				<a id="headerlogo">
 					
-						<img src="img/icons/Logo-program EL-DP-07.png" style="width: 65px; margin: 0 0 0 -240px;">
+						<img src="img/icons/logo-eldp-version2.png" style="width: 65px; margin: 0 0 0 -240px;">
 					
 				</a>
 				<div id="headerTitles">
@@ -648,7 +648,6 @@ foreach($jsFiles as $jsFile){
 	            	
 			  		<a href="#!">
 					<img src="img/icons/home-01.png" id="homebutton" alt="home"/>
-						Home
 					</a>
 				</nav>
 			</div>
@@ -658,11 +657,30 @@ foreach($jsFiles as $jsFile){
 	</header>
 
 	<div id="wrapper">
+
+
+
 		<div id="centerWrapper">
+			
+			<div id="subhome" >
+				<a href="#!/" class="uphome">Profile Perpustakaan</a>
+	            <a href="#!/" class="uphome">Banner Management</a>
+	            <a href="#!/" class="uphome">Pengadaan Buku</a>
+	            <a href="#!/" class="uphome">Ubah Sandi</a>
+	            <a href="#!/" class="uphome">Alamat Server</a>
+	            <a href="#!/" class="uphome">Logout</a>
+	        </div>
+
+	        
+		      <!--a href="#!/url=books.php"><img src="img/Logomenu1-12.png" class="upbutton"> Daftar Buku</a>
+		      <a href="#!/url=favbooks.php"><img src="img/Logomenu2-13.png" class="upbutton"> Buku Favorit</a>
+		      <a href="#!/url=findbooks.php"><img src="img/Logomenu3-14.png" class="upbutton"> Cari</a-->
+		  	
 
 	    	<div id="tileContainer" class="" style="width: 1097.5px; height: 579px; display: block;">
 	                    		
-		       	<a href="#&amp;" id="groupTitle0" class="groupTitle" style="margin-left: 0px; margin-top: 0px; display: block;" onclick="javascript:$group.goTo(0);"><h3></h3></a>
+	    		
+
 		      	<a id="tileSlideshow0-0_35--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 56px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-56-190" data-n="0"> 
 		    
 				    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 165.901654111111px; top: 0px;"><img src="" alt=""></div>
@@ -703,7 +721,7 @@ foreach($jsFiles as $jsFile){
 			    </a>
 
 
-		      	<a id="tileSlideshow0-4_25--0_25" class="tile tileSlideshow group0 noClick" style="margin-top: 5px; margin-left: 680px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-680-190" data-n="0"> 
+		      	<a id="tileSlideshow0-4_25--0_25" class="tile tileSlideshow group0" style="margin-top: 5px; margin-left: 680px; width: 190px; height: 190px; display: block; background: rgb(103, 59, 183);" data-pos="5-680-190" data-n="0"> 
 		    
 			    <div class="imgWrapperBack" style="width: 192px; height: 192px; left: 163.415616px; top: 0px;"><img src="" alt=""></div>
 				<div class="imgWrapper" style="width: 192px; height: 192px; left: -28.584384px; top: 0px;"><img src="" alt=""></div>

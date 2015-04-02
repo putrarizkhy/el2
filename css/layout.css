@@ -143,7 +143,7 @@ header{
 	display:none;
 	position:relative;		
 	font-weight:normal;
-	margin: 20px 0 0 50px;
+	margin: 35px 0 0 50px;
 }
 footer{ /*show a little footer in the rightdown corner*/
 	position:fixed;
@@ -787,6 +787,20 @@ dl.separator dt:first-child:after { display: none; }
 	width: 42px;
 	margin-top: -9px;
 }
+
+#subhome{
+	position: absolute;
+	left: 68px;
+	top: -80px;
+
+}
+
+
+.uphome{
+	font-size: 18px;
+	padding: 0 10px;
+}
+
 /*.list{
 	clear: both;
 	position: absolute;
